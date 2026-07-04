@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case File №001 — The Mystery of Customers Who Leave</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="margin:0; background:#161010; padding:24px; box-sizing:border-box;">
+
+<div class="cb-root">
+  <div class="cb-header">
+    <div class="cb-stamp">CASE FILE Nº 001</div>
+    <div class="cb-sub">THE MYSTERY OF CUSTOMERS WHO LEAVE &nbsp;·&nbsp; STATUS: SOLVED</div>
+  </div>
+
+  <div class="cb-board" id="board">
+    <svg class="cb-svg" id="svg"></svg>
+
+    <!-- Verdict card, center-right -->
+    <div class="cb-verdict" id="verdict" style="top: 220px; left: 690px;">
+      <div class="cb-verdict-title">◆ THE VERDICT ◆</div>
+      <div class="cb-verdict-stat">76.9%</div>
+      <div class="cb-verdict-label">model accuracy</div>
+      <hr class="cb-verdict-sep">
+      <div class="cb-verdict-stat" style="font-size:22px;">0.84</div>
+      <div class="cb-verdict-label">ROC AUC</div>
+      <hr class="cb-verdict-sep">
+      <div class="cb-verdict-label">Investigator: Random Forest<br>Evidence: 7,043 records</div>
+    </div>
+
+    <!-- Suspect cards -->
+    <div class="cb-card" id="s1" style="top: 20px; left: 40px; transform: rotate(-3deg);">
+      <div class="cb-pin"></div>
+      <div class="cb-rank">SUSPECT #1</div>
+      <div class="cb-name">Contract Type</div>
+      <div class="cb-bar-bg"><div class="cb-bar-fill" style="width:100%"></div></div>
+      <div class="cb-pct">18.6% weight of evidence</div>
+    </div>
+
+    <div class="cb-card" id="s2" style="top: 40px; left: 260px; transform: rotate(2deg);">
+      <div class="cb-pin"></div>
+      <div class="cb-rank">SUSPECT #2</div>
+      <div class="cb-name">Tenure</div>
+      <div class="cb-bar-bg"><div class="cb-bar-fill" style="width:79%"></div></div>
+      <div class="cb-pct">14.8% weight of evidence</div>
+    </div>
+
+    <div class="cb-card" id="s3" style="top: 190px; left: 40px; transform: rotate(1.5deg);">
+      <div class="cb-pin"></div>
+      <div class="cb-rank">SUSPECT #3</div>
+      <div class="cb-name">Total Charges</div>
+      <div class="cb-bar-bg"><div class="cb-bar-fill" style="width:67%"></div></div>
+      <div class="cb-pct">12.5% weight of evidence</div>
+    </div>
+
+    <div class="cb-card" id="s4" style="top: 200px; left: 265px; transform: rotate(-2deg);">
+      <div class="cb-pin"></div>
+      <div class="cb-rank">SUSPECT #4</div>
+      <div class="cb-name">Monthly Charges</div>
+      <div class="cb-bar-bg"><div class="cb-bar-fill" style="width:66%"></div></div>
+      <div class="cb-pct">12.2% weight of evidence</div>
+    </div>
+
+    <div class="cb-card" id="s5" style="top: 350px; left: 60px; transform: rotate(-1deg);">
+      <div class="cb-pin"></div>
+      <div class="cb-rank">SUSPECT #5</div>
+      <div class="cb-name">Online Security</div>
+      <div class="cb-bar-bg"><div class="cb-bar-fill" style="width:47%"></div></div>
+      <div class="cb-pct">8.8% weight of evidence</div>
+    </div>
+
+    <div class="cb-card" id="s6" style="top: 380px; left: 300px; transform: rotate(2.5deg);">
+      <div class="cb-pin"></div>
+      <div class="cb-rank">SUSPECT #6</div>
+      <div class="cb-name">Tech Support</div>
+      <div class="cb-bar-bg"><div class="cb-bar-fill" style="width:36%"></div></div>
+      <div class="cb-pct">6.8% weight of evidence</div>
+    </div>
+
+    <div class="cb-card" id="s7" style="top: 480px; left: 130px; transform: rotate(-2deg);">
+      <div class="cb-pin"></div>
+      <div class="cb-rank">SUSPECT #7</div>
+      <div class="cb-name">Internet Service</div>
+      <div class="cb-bar-bg"><div class="cb-bar-fill" style="width:27%"></div></div>
+      <div class="cb-pct">5.1% weight of evidence</div>
+    </div>
+
+    <!-- Sticky note -->
+    <div class="cb-note" id="note" style="top: 30px; left: 470px; transform: rotate(-2deg);">
+      "Month-to-month customers with no add-on services keep showing up at the scene.
+      That's not a coincidence — that's a pattern."
+      <br>— Lead Investigator
+    </div>
+
+    <!-- Photo-style card for dataset -->
+    <div class="cb-card" id="ds" style="top: 440px; left: 470px; transform: rotate(1deg); width: 190px; background: var(--wood-dark); color: var(--paper);">
+      <div class="cb-pin"></div>
+      <div class="cb-rank" style="color: var(--brass);">EVIDENCE LOCKER</div>
+      <div class="cb-name" style="color: var(--paper);">7,043 customer files</div>
+      <div class="cb-pct" style="opacity:1;">Telco customer records<br>26.5% churned overall</div>
+    </div>
+  </div>
+
+  <div class="cb-footer">📁 FULL EVIDENCE (CODE + DATA) FILED ON GITHUB — CASE CLOSED</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
