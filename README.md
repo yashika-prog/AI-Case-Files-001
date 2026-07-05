@@ -81,6 +81,13 @@ cd churn-case-file
 pip install -r requirements.txt
 python src/investigate.py
 ```
+unzip churn-case-file.zip
+cd churn-case-file
+git init
+git add .
+git commit -m "Case File №001: churn investigation"
+git remote add origin <your-repo-url>
+git push -u origin main
 
 This regenerates `results/case_results.json` and `assets/evidence_board.png` from scratch.
 
